@@ -109,10 +109,10 @@ if H_NUM == 1:
   os.system("sudo apt update && sudo apt upgrade y")
 elif H_NUM == 2:
   print("Ping 1.1.1.1 TEST")
-  os.system("ping 1.1.1.1 ")
+  os.system(f"ping 1.1.1.1 ")
 elif H_NUM == 3:
   print("3.3x-ui Install")
-  os.system(f"curl -O {xuiurl}")
+  os.system(f"wget {xuiurl}")
   time.sleep(0.5)
   os.system("bash ./install.sh")
 elif H_NUM == 4:
