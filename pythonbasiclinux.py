@@ -85,7 +85,7 @@ LOGO = r'''
 (___)        .__.'                                                      
 '''
 
-HELP1 = ('1.Update && Upgrade -y');HELP2 = ('2.Ping 1.1.1.1 TEST');HELP3 = ('3.3x-ui Install');HELP4 = ('4.No')
+HELP1 = ('1.Update && Upgrade -y');HELP2 = ('2.Ping 1.1.1.1 TEST');HELP3 = ('3.3x-ui Install');HELP4 = ('4.NoT')
 #Link
 xuiurl = "https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh"
 
@@ -105,16 +105,23 @@ time.sleep(0.2)
 print(HELP1),print(HELP2),print(HELP3),print(HELP4)
 H_NUM = int(input("Enter Number 1-4 : "))
 if H_NUM == 1:
-  print("Update && Upgrade -y")
+  print("Update && Upgrade -y"),time.sleep(1.5),cls()
+  print("RUN >>> sudo apt update && sudo apt upgrade y"),time.sleep(1.5),cls()
   os.system("sudo apt update && sudo apt upgrade y")
 elif H_NUM == 2:
-  print("Ping 1.1.1.1 TEST")
+  print("Ping 1.1.1.1 TEST"),time.sleep(1.5),cls()
+  time.sleep(0.3)
+  print(">>>ctrl c for stop ping<<<"),time.sleep(2),cls()
+  print("RUN >>> ping 1.1.1.1"),time.sleep(1.5),cls()
   os.system(f"ping 1.1.1.1 ")
 elif H_NUM == 3:
-  print("3.3x-ui Install")
+  print("3.3x-ui Install"),time.sleep(1.5),cls()
   os.system(f"wget {xuiurl}")
-  time.sleep(0.5)
+  time.sleep(0.3)
   os.system("bash ./install.sh")
+  time.sleep(0.3)
+  os.system("rm -r install.sh")
+
 elif H_NUM == 4:
   print("YES THAT IS N O T ")
 else:
