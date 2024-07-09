@@ -106,8 +106,8 @@ print(HELP1),print(HELP2),print(HELP3),print(HELP4)
 H_NUM = int(input("Enter Number 1-4 : "))
 if H_NUM == 1:
   print("Update && Upgrade -y"),time.sleep(1.5),cls()
-  print("RUN >>> sudo apt update && sudo apt upgrade y"),time.sleep(1.5),cls()
-  os.system("sudo apt update && sudo apt upgrade y")
+  print("RUN >>> sudo apt update && sudo apt upgrade -y"),time.sleep(1.5),cls()
+  os.system("sudo apt update && sudo apt upgrade -y")
 elif H_NUM == 2:
   print("Ping 1.1.1.1 TEST"),time.sleep(1.5),cls()
   time.sleep(0.3)
