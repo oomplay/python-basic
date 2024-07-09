@@ -84,7 +84,11 @@ LOGO = r'''
  | |        ; `-' '                                                     
 (___)        .__.'                                                      
 '''
+
 HELP1 = ('1.Update && Upgrade -y');HELP2 = ('2.Ping 1.1.1.1 TEST');HELP3 = ('3.3x-ui Install');HELP4 = ('4.No')
+#Link
+xuiurl = "https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh"
+
 
 print(LOADING),time.sleep(0.3),cls()
 print(LOADING1),time.sleep(0.3),cls()
@@ -108,7 +112,9 @@ elif H_NUM == 2:
   os.system("ping 1.1.1.1 ")
 elif H_NUM == 3:
   print("3.3x-ui Install")
-  os.system(" bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) ")
+  os.system(f"curl -O {xuiurl}")
+  time.sleep(0.5)
+  os.system("bash ./install.sh")
 elif H_NUM == 4:
   print("YES THAT IS N O T ")
 else:
