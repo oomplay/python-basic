@@ -14,9 +14,12 @@ googlechrome = 'https://dl.google.com/linux/direct/google-chrome-stable_current_
 dockerinstall = ('curl -Ls https://get.docker.com > dockerinstall.sh')
 
 RUN1 = ('Run auto install ');RUN2 = ('Run in 3');RUN3 = ('Run in 2');RUN4 = ('Run in 1');RUN5 = ('Run Script install');RUN6 =('SUCCESS SCRIPT ! ! !')
+
 OSshow1 = ('1. Neofetch on Ubuntu & Debian');OSshow2 = ('2. Google Chrome on Linux');OSshow3 = ('3. Install Docker');OSshow4 = ('4. Uninstall CentOS');OSshow5 = ('5. openSUSE')
+
 print(LOGO),time.sleep(3),cls()
 print(OSshow1),print(OSshow2),print(OSshow3)#,print(OSshow4),print(OSshow5)
+
 OSTPYE = int(input('Enter Number : '))
 if OSTPYE == 1:
   
@@ -27,10 +30,7 @@ if OSTPYE == 1:
   print(RUN5),time.sleep(0.5),cls()
   os.system('sudo apt update && sudo apt upgrade -y'),time.sleep(0.3)
   os.system('sudo apt-get install neofetch -y'),time.sleep(0.3)
-  os.system('neofetch'),time.sleep(0.3)
-
-
-
+  os.system('neofetch'),time.sleep(6)
 
 elif OSTPYE == 2:
   print(RUN1),time.sleep(0.5),cls()
@@ -44,6 +44,7 @@ elif OSTPYE == 2:
   os.system('sudo dpkg -i google-chrome-stable_current_amd64.deb'),time.sleep(0.3)
   os.system('google-chrome'),time.sleep(0.3)
   os.system('rm -r google-chrome-stable_current_amd64.deb')
+  
 elif OSTPYE == 3:
   print(RUN1),time.sleep(0.5),cls()
   print(RUN2),time.sleep(0.5),cls()
