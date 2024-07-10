@@ -40,6 +40,7 @@ elif OSTPYE == 2:
   os.system(f"wget {googlechrome}"),time.sleep(0.3)
   os.system('sudo dpkg -i google-chrome-stable_current_amd64.deb'),time.sleep(0.3)
   os.system('google-chrome'),time.sleep(0.3)
+  os.system('rm -r google-chrome-stable_current_amd64.deb')
 
 else:
     print('Try Again')
