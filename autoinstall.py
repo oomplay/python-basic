@@ -52,7 +52,8 @@ elif OSTPYE == 3:
   os.system('sudo apt update && sudo apt upgrade -y'),time.sleep(0.3)
   os.system('sudo apt install curl -y'),time.sleep(0.3)
   os.system(f'{dockerinstall}')
-  os.system('sodo bash dockerinstall.sh')
+  os.system('sudo bash dockerinstall.sh')
+  os.system('rm -r dockerinstall.sh')
 
 
 else:
