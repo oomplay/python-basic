@@ -17,7 +17,7 @@ RUN1 = ('Run auto install ');RUN2 = ('Run in 3');RUN3 = ('Run in 2');RUN4 = ('Ru
 OSshow1 = ('1. Neofetch on Ubuntu & Debian');OSshow2 = ('2. Google Chrome on Linux');OSshow3 = ('3. Install Docker');OSshow4 = ('4. Uninstall CentOS');OSshow5 = ('5. openSUSE')
 print(LOGO),time.sleep(3),cls()
 print(OSshow1),print(OSshow2),print(OSshow3)#,print(OSshow4),print(OSshow5)
-OSTPYE = int(input('Enter Your OS : '))
+OSTPYE = int(input('Enter Number : '))
 if OSTPYE == 1:
   
   print(RUN1),time.sleep(0.5),cls()
@@ -59,4 +59,3 @@ elif OSTPYE == 3:
 
 else:
     print('Try Again')
-
